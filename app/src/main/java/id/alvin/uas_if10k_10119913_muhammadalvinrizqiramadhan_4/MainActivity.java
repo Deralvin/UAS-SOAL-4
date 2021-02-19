@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     EditText nama,warga,tujuan;
     Button show;
 
-    TextView value_nama,value_warga,value_tujuan;
+    TextView value_nama,value_warga,value_tujuan,result;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,12 +29,14 @@ public class MainActivity extends AppCompatActivity {
         value_nama = findViewById(R.id.value_nama);
         value_warga = findViewById(R.id.value_warga);
         value_tujuan = findViewById(R.id.value_tujuan);
+        result =  findViewById(R.id.textresult);
         show.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                value_nama.setText(nama.getText().toString());
-                value_warga.setText(warga.getText().toString());
-                value_tujuan.setText(tujuan.getText().toString());
+                result.setText("HASIL DATA APLIKASI PENDATAAN WIATAWAN \n ==========================");
+                value_nama.setText("NAMA\t\t\t\t:"+nama.getText().toString());
+                value_warga.setText("KEWARGANGARAAN\t\t\t\t: "+warga.getText().toString());
+                value_tujuan.setText("TUJUAN\t\t\t\t:"+tujuan.getText().toString());
             }
         });
     }
