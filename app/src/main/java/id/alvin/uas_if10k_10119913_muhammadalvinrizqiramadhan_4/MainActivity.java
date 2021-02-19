@@ -11,7 +11,7 @@ import android.widget.TextView;
 //Muhammad Alvin Rizqi ramadhan
 //IF10K
 //10119913
-//
+//19 Februari 2021
 public class MainActivity extends AppCompatActivity {
     EditText nama,warga,tujuan;
     Button show;
